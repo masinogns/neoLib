@@ -4,6 +4,7 @@ import MySQL.geocoding;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by masinogns on 2017. 11. 1..
@@ -11,14 +12,29 @@ import java.util.ArrayList;
 public class geocodingTest {
     @Test
     public void test() throws Exception {
-        geocoding bb = new geocoding();
+        String path = "/Users/masinogns/Desktop/테마관광지.txt";
+        ReadTextFile readTextFile = new ReadTextFile();
 
-//        String path = "제주특별자치도 제주시 거로중길 28";
-        String path = "제주특별자치도 제주시 조천읍 비자림로 645";
+        geocoding geocoding = new geocoding();
 
-        String[] SS = bb.run(path);
-        System.out.println(SS[0]+" "+SS[1]);
+        HashMap<String, String[]> dataset = new HashMap<String, String[]>();
 
+//        String path = "제주특별자치도 제주시 거로중길 28"; 주소를 써도되고 명칭을 써도 된다
+        //String keyword = "오설록티뮤지엄";
+        String keyword = "해비치컨트리클럽제주";
+        String[] data = geocoding.run(keyword);
+        System.out.println(data[0]+" "+data[1]+" "+data[2]);
+
+        ArrayList<String> ret = readTextFile.read(path);
+
+        for (String word  : ret){
+
+        }
+        dataset.put(keyword, data);
+
+//
+//        ForGeo forGeo = new ForGeo();
+//        forGeo.insert(dataset);
     }
 
 }

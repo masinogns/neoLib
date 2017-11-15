@@ -127,4 +127,52 @@ public class ForGeo {
         return output.toString();
     }
 
+    public void insert(HashMap<String, String[]> dataSet) throws SQLException {
+        PreparedStatement preparedStatement = null;
+
+        String insertTableSQL = "INSERT INTO  place"
+                + "(name, lng, lat, address) VALUES"
+                + "(?,?,?,?)";
+
+        try {
+            //STEP 2: Register JDBC driver
+            Class.forName(JDBC_DRIVER);
+
+            //STEP 3: Open a connection
+            System.out.println("선택된 데이터베이스와 연결 중입니다...");
+            conn = DriverManager.getConnection(DB_URL, DB_ID, DB_PW);
+            System.out.println("데이터베이스에 성공적으로 연결되었습니다...");
+
+
+            Iterator iterator = dataSet.keySet().iterator();
+
+            while (iterator.hasNext()){
+                String keyword = (String) iterator.next();
+                String[] data = dataSet.get(keyword);
+
+                preparedStatement = conn.prepareStatement(insertTableSQL);
+
+                preparedStatement.setString(1, keyword);
+                preparedStatement.setString(2, data[0]);
+                preparedStatement.setString(3, data[1]);
+                preparedStatement.setString(4, data[2]);
+
+                preparedStatement.executeUpdate();
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            if (preparedStatement != null) {
+                preparedStatement.close();
+            }
+            if (conn != null) {
+                conn.close();
+            }
+        }
+    }
+
+
 }

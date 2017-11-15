@@ -29,6 +29,7 @@ public class geocoding {
 
         private static final String URL = "https://maps.googleapis.com/maps/api/geocode/json";
         private static final String KEY = "AIzaSyBAQMS5TxTcS4725sI8IH3lr9B8p94ub7k";
+        private static final String KO = "&language=ko";
         private String lng;
         private String lat;
 
@@ -47,32 +48,48 @@ public class geocoding {
 
 
         public String[] run(String path) throws IOException, ParseException {
+                String[] ss = new String[3];
+                ArrayList<String> result = new ArrayList();
+
                 String ret = getJSONByGoogle(path);
-//                System.out.println("dd"+ret);
+                System.out.println("dd"+ret);
+                System.out.println("================");
                 JSONObject json = stringToJson(ret);
                 Iterator it = json.keySet().iterator();
                 JSONArray jsonArray = (JSONArray) json.get("results");
 
-                JSONObject object = (JSONObject) jsonArray.get(0);
-                Iterator bb = object.keySet().iterator();
+                try {
+                        JSONObject object = (JSONObject) jsonArray.get(0);
+                        Iterator bb = object.keySet().iterator();
+                        while (bb.hasNext())
+                                System.out.println(bb.next());
 
-                JSONObject object1 = (JSONObject) object.get("geometry");
-                JSONObject object2 = (JSONObject) object1.get("location");
-                Iterator itt = object2.values().iterator();
+                        System.out.println();
+                        System.out.println(object.get("formatted_address"));
+                        System.out.println();
 
-                ArrayList<String> result = new ArrayList();
+                        JSONObject object1 = (JSONObject) object.get("geometry");
+                        JSONObject object2 = (JSONObject) object1.get("location");
+                        Iterator itt = object2.values().iterator();
 
-                while (itt.hasNext()){
-                        String address = itt.next().toString();
+                        while (itt.hasNext()) {
+                                String address = itt.next().toString();
 //                        System.out.println("d"+address);
-                        result.add(address);
-                }
+                                result.add(address);
+                        }
 
-                String[] ss = new String[2];
-                ss[0] = result.get(0); ss[1] = result.get(1);
 
-                // 0이 lng이고 1이 lat이다
+                        ss[0] = result.get(0);
+                        ss[1] = result.get(1);
+                        ss[2] = (String) object.get("formatted_address");
+
+                        // 0이 lng이고 1이 lat이다
 //                setLng(result.get(0)); setLat(result.get(1));
+
+                }catch (Exception e){
+                        System.out.println("매칭되는 위도 경도가 없습니다");
+
+                }
 
                 return ss;
         }
@@ -97,7 +114,7 @@ public class geocoding {
          * @throws IOException
          */
         public String getJSONByGoogle(String fullAddress) throws IOException {
-                URL url = new URL(URL + "?address=" + URLEncoder.encode(fullAddress, "UTF-8") + "&key=" + KEY);
+                URL url = new URL(URL + "?address=" + URLEncoder.encode(fullAddress, "UTF-8") + "&key=" + KEY+KO);
                 URLConnection conn = url.openConnection();
                 ByteArrayOutputStream output = new ByteArrayOutputStream(1024);
                 IOUtils.copy(conn.getInputStream(), output);
