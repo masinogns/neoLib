@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb8f9d39-ed4b-4c52-b9d3-0ff56328156a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MySQL/ForGeo.java" afterPath="$PROJECT_DIR$/src/main/java/MySQL/ForGeo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/MySQL/geocoding.java" afterPath="$PROJECT_DIR$/src/main/java/MySQL/geocoding.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SQLInsertPlaceInformation.sql" afterPath="$PROJECT_DIR$/SQLInsertPlaceInformation.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/MySQL/geocodingTest.java" afterPath="$PROJECT_DIR$/src/test/java/MySQL/geocodingTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -40,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="geocodingTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="geocodingTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/MySQL/geocodingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+            <state relative-caret-position="333">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#469#487#0" expanded="true" />
@@ -53,15 +51,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadTextFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MySQL/ReadTextFile.java">
+      <file leaf-file-name="update.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/update.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#309#317#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-29">
+              <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLInsertPlaceInformation.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SQLInsertPlaceInformation.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="78" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="78" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,74 +83,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForGeoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MySQL/ForGeoTest.java">
+      <file leaf-file-name="backup.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backup.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="-32166">
+              <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForGeo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MySQL/ForGeo.java">
+      <file leaf-file-name="20171108_backup.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/20171108_backup.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="148" column="39" lean-forward="true" selection-start-line="148" selection-start-column="39" selection-end-line="148" selection-end-column="39" />
-              <folding>
-                <element signature="method#select#0;class#ForGeo#0" expanded="false" />
-                <element signature="method#run#0;class#ForGeo#0" expanded="false" />
-                <element signature="method#stringToJson#0;class#ForGeo#0" expanded="false" />
-                <element signature="method#getJSONByGoogle#0;class#ForGeo#0" expanded="false" />
-                <marker date="1510726070000" expanded="true" signature="4085:4186" ph="INSERT INTO missingValue... " />
-                <marker date="1510726070000" expanded="true" signature="4124:4156" ph="(name, phone... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createMySQL.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MySQL/createMySQL.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="221" column="19" lean-forward="true" selection-start-line="221" selection-start-column="19" selection-end-line="221" selection-end-column="19" />
-              <folding>
-                <marker date="1510107667000" expanded="true" signature="3901:4008" ph="INSERT INTO missingValue... " />
-                <marker date="1510107667000" expanded="true" signature="5821:5928" ph="INSERT INTO DBUSER... " />
-                <marker date="1510107667000" expanded="true" signature="5864:5900" ph="(id, firstna... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WriteCSVFileTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MySQL/WriteCSVFileTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-28">
-              <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="-665">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FirstExampleTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MySQL/FirstExampleTest.java">
+      <file leaf-file-name="index.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/index.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <marker date="1508981469000" expanded="true" signature="653:911" ph="CREATE TABLE... aaa" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createMySQLTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MySQL/createMySQLTest.java">
+      <file leaf-file-name="auction_user.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/auction_user.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="64" column="23" lean-forward="true" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+            <state relative-caret-position="427">
+              <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/view.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -215,7 +197,6 @@
         <option value="$PROJECT_DIR$/src/main/java/MySQL/createMySQL.java" />
         <option value="$PROJECT_DIR$/src/main/java/MySQL/ReadThenInsert.java" />
         <option value="$PROJECT_DIR$/update.sql" />
-        <option value="$PROJECT_DIR$/SQLInsertPlaceInformation.sql" />
         <option value="$PROJECT_DIR$/mysql.sh" />
         <option value="$PROJECT_DIR$/tourList.txt" />
         <option value="$PROJECT_DIR$/src/main/java/api.java" />
@@ -225,6 +206,7 @@
         <option value="$PROJECT_DIR$/src/test/java/MySQL/ReadTextFileTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/MySQL/geocoding.java" />
         <option value="$PROJECT_DIR$/src/test/java/MySQL/geocodingTest.java" />
+        <option value="$PROJECT_DIR$/SQLInsertPlaceInformation.sql" />
       </list>
     </option>
   </component>
@@ -975,7 +957,7 @@
       <workItem from="1510101470792" duration="7464000" />
       <workItem from="1510116148423" duration="3944000" />
       <workItem from="1510642628924" duration="7831000" />
-      <workItem from="1510714442415" duration="8369000" />
+      <workItem from="1510714442415" duration="8923000" />
     </task>
     <servers />
   </component>
@@ -995,9 +977,6 @@
     <history-entry file="ReadTextFileTest_name - 2017.11.15 at 15h 35m 47s.xml">
       <configuration name="ReadTextFileTest.name" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="geocodingTest_test - 2017.11.15 at 15h 08m 17s.xml">
-      <configuration name="geocodingTest.test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="geocodingTest_test - 2017.11.15 at 15h 18m 22s.xml">
       <configuration name="geocodingTest.test" configurationId="JUnit" />
     </history-entry>
@@ -1010,9 +989,12 @@
     <history-entry file="geocodingTest_test - 2017.11.15 at 16h 15m 07s.xml">
       <configuration name="geocodingTest.test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="geocodingTest_test - 2017.11.15 at 16h 34m 12s.xml">
+      <configuration name="geocodingTest.test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90129000" />
+    <option name="totallyTimeSpent" value="90683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1024" y="-480" width="1920" height="1080" extended-state="0" />
@@ -1069,14 +1051,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/MySQL/InsertMySQL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MySQL/FirstExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -1310,14 +1284,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SQLInsertPlaceInformation.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70775">
@@ -1325,50 +1291,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/update.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backup.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2204">
-          <caret line="116" column="40" lean-forward="false" selection-start-line="116" selection-start-column="40" selection-end-line="116" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/index.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/auction_user.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysql.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1502,12 +1428,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MySQL/geocodingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="25" column="43" lean-forward="false" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        <state relative-caret-position="333">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#469#487#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/view.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/index.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/auction_user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/update.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20171108_backup.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-665">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backup.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32166">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQLInsertPlaceInformation.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="78" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>
