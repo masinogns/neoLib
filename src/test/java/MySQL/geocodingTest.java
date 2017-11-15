@@ -12,7 +12,14 @@ import java.util.HashMap;
 public class geocodingTest {
     @Test
     public void test() throws Exception {
-        String path = "/Users/masinogns/Desktop/테마관광지.txt";
+        String path = "/Users/masinogns/Desktop/레저관광지.txt";
+
+        // 2017.11.15 ; 테마관광지 완료
+        // 2017.11.15 ; 문화관광지 완료
+        // 2017.11.15 ; 도보관광지 완료
+        // 2017.11.15 ; 자연관광지 완료
+        // 2017.11.15 ; 레저관광지 완료
+
         ReadTextFile readTextFile = new ReadTextFile();
 
         geocoding geocoding = new geocoding();
@@ -23,7 +30,6 @@ public class geocodingTest {
         //String keyword = "오설록티뮤지엄";
 //        String keyword = "해비치컨트리클럽제주";
 
-
         ArrayList<String> ret = readTextFile.read(path);
 
         for (String word  : ret){
@@ -32,10 +38,9 @@ public class geocodingTest {
             dataset.put(word, data);
         }
 
+        ForGeo forGeo = new ForGeo();
+        forGeo.insert(dataset);
 
-//
-//        ForGeo forGeo = new ForGeo();
-//        forGeo.insert(dataset);
     }
 
 }

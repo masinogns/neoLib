@@ -52,8 +52,8 @@ public class geocoding {
                 ArrayList<String> result = new ArrayList();
 
                 String ret = getJSONByGoogle(path);
-                System.out.println("dd"+ret);
-                System.out.println("================");
+//                System.out.println("dd"+ret);
+//                System.out.println("================");
                 JSONObject json = stringToJson(ret);
                 Iterator it = json.keySet().iterator();
                 JSONArray jsonArray = (JSONArray) json.get("results");
@@ -61,12 +61,12 @@ public class geocoding {
                 try {
                         JSONObject object = (JSONObject) jsonArray.get(0);
                         Iterator bb = object.keySet().iterator();
-                        while (bb.hasNext())
-                                System.out.println(bb.next());
-
-                        System.out.println();
-                        System.out.println(object.get("formatted_address"));
-                        System.out.println();
+//                        while (bb.hasNext())
+//                                System.out.println(bb.next());
+//
+//                        System.out.println();
+//                        System.out.println(object.get("formatted_address"));
+                        System.out.print(".");
 
                         JSONObject object1 = (JSONObject) object.get("geometry");
                         JSONObject object2 = (JSONObject) object1.get("location");
